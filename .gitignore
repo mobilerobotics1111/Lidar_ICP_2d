@@ -256,3 +256,6 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
+.vs/ICP/v16/Browse.VC.opendb
+.vs/ICP/v16/Browse.VC.db-wal
+.vs/ICP/v16/Browse.VC.db-shm

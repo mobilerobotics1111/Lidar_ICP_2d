@@ -35,7 +35,6 @@ void ICP::solve(std::vector<Eigen::Vector2f>& scan1, std::vector<Eigen::Vector2f
             point_pair.clear();
             std::vector<Eigen::Vector2f>().swap(point_pair);
         }
-        //if (best != nullptr) delete best;
         delete root;
 
         if (point_pairs.size() == 0)

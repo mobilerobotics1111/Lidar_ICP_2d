@@ -17,18 +17,11 @@ public:
     Kdnode* right = NULL;
 
     ~Kdnode() {
-        if (this->left){
-            this->left->~Kdnode();
-            delete this->left;
-            this->left = NULL;
-        }
-        if (this->right){
-            this->right->~Kdnode();
-            delete this->right;
-            this->right = NULL;
-        }
+        delete left;
+        delete right;
     }
-
+    Kdnode() = default;
+    Kdnode& operator=(const Kdnode&) = default;
 
     void print_kdnode()
     {
